@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/phone_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/customborder"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/ic_person"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="홍길동"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="01022225555"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>
